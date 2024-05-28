@@ -1,6 +1,9 @@
 /** @type {[number, number]}
  * Provide an array with longitude and latitude [$longitude, $latitude]
  */
+
+import { ViewStyle } from "react-native";
+
 type Coordinate = [number, number];
 
 type OnLocationChangeEvent = {
@@ -26,6 +29,7 @@ type OnErrorEvent = {
 };
 
 export interface IMapboxNavigationProps {
+  style?: ViewStyle;
   origin: Coordinate;
   destination: Coordinate;
   shouldSimulateRoute?: boolean;
