@@ -10,7 +10,6 @@ import com.mapbox.geojson.Point
 import javax.annotation.Nonnull
 
 class MapboxNavigationManager(var mCallerContext: ReactApplicationContext) : SimpleViewManager<MapboxNavigationView>() {
-
   override fun getName(): String = "MapboxNavigation"
 
   public override fun createViewInstance(@Nonnull reactContext: ThemedReactContext): MapboxNavigationView {
@@ -99,6 +98,4 @@ class MapboxNavigationManager(var mCallerContext: ReactApplicationContext) : Sim
       }
       view.setMaxWidth(width?.toDouble())
   }
-
-
 }

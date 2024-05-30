@@ -86,6 +86,7 @@ class MapboxNavigationView(private val context: ThemedReactContext): FrameLayout
         private const val BUTTON_ANIMATION_DURATION = 1500L
     }
 
+
     private var origin: Point? = null
     private var waypoints: List<Point>? = null
     private var destination: Point? = null
